@@ -5,9 +5,9 @@ import pickle
 #opening file in writing mode
 file = open("dictionary.txt", "wb")
 
-my_dict = {"Name": "John",
-           "Age": 21,
-           "Id": 28}
+my_dict = {
+	"Name" : "Ramu", "age" : 20, "gender": "Male"
+}
 
 #serializing dictionary
 pickle.dump(my_dict, file)
@@ -24,5 +24,8 @@ print((type(data)))
 # reading the file as dictionary
 d = pickle.loads(data)
 print(type(d))
+
 print(d)
+
+
 
