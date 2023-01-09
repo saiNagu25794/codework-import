@@ -6,6 +6,7 @@ def peekingIterator(list_a, inputList):
     index = 0
     for item in inputList:
 
+
         if item == "next":
             result_list.append(list_a[index])
             index += 1
